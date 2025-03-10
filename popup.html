@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Extractor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 500px; /* Width Badhaya */
+            padding: 10px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            word-break: break-word; /* Long text wrap ho sake */
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #0073b1;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #005582;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>LinkedIn Profile Extractor</h3>
+    <button id="extract">Extract Data</button>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Headline</th>
+                <th>Location</th>
+                <th>Current Job</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="profile-data"></tbody>
+    </table>
+
+    <button id="download">Download CSV</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
